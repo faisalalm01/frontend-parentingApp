@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 function LandingPage() {
   return (
-    <section>
-        <div>
+    <section className='landing-page'>
+        <div className='landing-page__intro'>
           {/* image */}
           <h3>Smart <span>Family</span></h3>
           <p>Mari mendidik anak untuk masa depan menjadi lebih baik.</p>
         </div>
 
-        <div>
+        <div className='landing-page__link'>
           <ul>
             <li>
               <Link to="/forum"> Forum diskusi </Link>
@@ -19,7 +19,7 @@ function LandingPage() {
               <Link to="/consultation"> Konsultasi </Link>
             </li>
             <li>
-              <Link to="#"> Chat Bot </Link>
+              <Link to="/#"> Chat Bot </Link>
             </li>
           </ul>
         </div>
@@ -50,9 +50,9 @@ function LandingPage() {
         </div>
         </section>
 
-        <section>
-          <h1>Artikel Terkini</h1>
-          <h3>Selengkapnya</h3> {/* link menuju seluruh daftar artikel */}
+        <section className='landing-page__article'>
+          <h1 className='Current-article'>Artikel Terkini</h1>
+          <h3 className='next-list-article'>Selengkapnya</h3> {/* link menuju seluruh daftar artikel */}
           {/* TODO memunculkan data artikel dari API */}
         </section>
     </section>

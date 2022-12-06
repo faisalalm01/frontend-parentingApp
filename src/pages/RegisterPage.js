@@ -15,13 +15,13 @@ function RegisterPage() {
     <section className='register-page'>
       <Logo />
 
-      <div>
+      <div className='register-page__intro'>
         <p>Silakan masukan nama, email dan password untuk mendaftar</p>
       </div>
 
       <RegisterInput register={onRegisterHandler} />
 
-      <div>
+      <div className='register-page__next-to-login'>
         <p>Sudah memiliki akun? Silakan masuk <Link to="/">disini</Link></p>
       </div>
     </section>

@@ -33,7 +33,7 @@ class Search extends React.Component {
       <form onSubmit={this.onSubmitHandler}>
         <input
           type="text"
-          placeholder="search movie by title"
+          placeholder="search"
           value={this.state.keyword}
           onChange={this.onKeywordChangeHandler}
         />

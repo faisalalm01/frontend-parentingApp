@@ -20,13 +20,13 @@ function LoginPage({ loginSuccess }) {
     <section className='login-page'>
       <Logo />
 
-      <div>
+      <div className='login-page__intro'>
         <h2>Silakan masuk untuk melanjutkan ...</h2>
       </div>
       
       <LoginInput login={onLogin} />
 
-      <div>
+      <div className='login-page__link-to-register'>
         <p>Belum memiliki akun? Silakan daftar <Link to="/register">disini</Link></p>
       </div>
     </section>

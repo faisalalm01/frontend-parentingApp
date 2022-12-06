@@ -1,5 +1,7 @@
 import React from 'react';
+
 import CaptainList from '../components/captains/CaptainList';
+
 import { getAllCaptains } from '../utils/data-captain';
 
 function AboutPage() {
@@ -34,6 +36,7 @@ function AboutPage() {
 
         <div className='mitra'>
           <h2>Mitra & Kerja Sama</h2>
+          {/* image mitra */}
         </div>
     </section>
   );
