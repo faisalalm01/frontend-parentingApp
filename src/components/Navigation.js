@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Navigation() {
     return (
-        <nav className='Navigation'>
+        <nav className='navigation'>
             <ul>
                 <li className='navigation__logo'>
                     <Link to="/"> Smart Family </Link>
