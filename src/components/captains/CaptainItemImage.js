@@ -1,9 +1,9 @@
 import React from 'react';
 
-function CaptainItemImage({ image }) {
+function CaptainItemImage({ imageUrl }) {
     return (
         <div className='captain-item__image'>
-            <img src={image} alt='captain avatar' />
+            <img src={imageUrl} alt='captain avatar' />
         </div>
     );
 }

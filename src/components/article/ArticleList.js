@@ -5,8 +5,8 @@ function ArticleList({ articles }) {
     return (
         <div>
             {
-                articles.map((article) => (
-                    <ArticleItem key={article.id} {...article} />
+              articles.map((article) => (
+                <ArticleItem key={article.id} {...article} />
                 ))
             }
         </div>
