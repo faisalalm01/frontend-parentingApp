@@ -6,7 +6,7 @@ import CaptainItemImage from '../captains/CaptainItemImage';
 function CaptainItem({ imageUrl, name, title, describe }) {
     return (
         <div>
-            <CaptainItemImage image={imageUrl} />
+            <CaptainItemImage imageUrl={imageUrl} />
             <CaptainItemBody name={name} title={title} describe={describe} />
         </div>
     );

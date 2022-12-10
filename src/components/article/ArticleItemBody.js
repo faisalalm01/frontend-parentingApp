@@ -2,9 +2,9 @@ import React from 'react';
 
 function ArticleItemBody({ describe, title }) {
     return (
-        <div className='article-item__body'>
-            <h3> {title} </h3>
-            <p> {describe} </p>
+        <div className='p-2 mb-20'>
+            <h3 className='font-bold'> {title} </h3>
+            <p className='text-ellipsis overflow-hidden'> {describe.slice(0,200)} </p>
         </div>
     );
 }
