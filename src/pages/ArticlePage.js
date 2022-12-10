@@ -36,8 +36,13 @@ function ArticlePage() {
 
   return (
       <section>
+      <div class="container px-5 py-24 mx-auto text-xl">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Artikel Terkini</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base px-60">Temukan informasi dan tips terbaik seputar parenting, pendidikan anak, kegiatan kreatif, dan konten menarik lainnya untuk mendukung tumbuh kembang si Kecil.</p>
+    </div>
+    </div>
           <Search keyword={keyword} keywordChange={onKeywordChangeHandler} />
-
           <ArticleList articles={filteredArticles} onDetail={onDetailHandler} />
 
       </section>
