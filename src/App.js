@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import LandingPage from "./pages/LandingPage";
 import ArticlePage from './pages/ArticlePage';
 import ForumPage from './pages/ForumPage';
-import ConsultationPage from './pages/ConsultationPage';
+import ConsultationPage from './pages/SharingPage';
 import AboutPage from "./pages/AboutPage";
 import DetailPage from './pages/DetailPage';
 
@@ -17,7 +17,6 @@ function App() {
             <header>
                 <Navigation />
             </header>
-
             <main>
                 <Routes>
                     <Route path='/' element={<LandingPage />} />
