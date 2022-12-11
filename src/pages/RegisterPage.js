@@ -19,7 +19,7 @@ function RegisterPage() {
       />
 
       <div className='register-page__intro text-center mt-4'>
-        <p className='text-sm'>Silahkan masukan nama, email dan password untuk mendaftar</p>
+        <p className='text-sm text-slate-700'>Silahkan masukan nama, email dan password untuk mendaftar</p>
       </div>
 
       <div className='flex'>
@@ -27,7 +27,7 @@ function RegisterPage() {
       </div>
 
       <div className='register-page__next-to-login'>
-        <p className='text-sm my-10'>Sudah memiliki akun? Silahkan masuk <Link to="/" className='text-blue-500 hover:text-blue-700'>disini</Link></p>
+        <p className='text-sm mt-2 text-slate-800'>Sudah memiliki akun? Silahkan masuk <Link to="/" className='text-blue-500 hover:text-blue-700'>disini</Link></p>
       </div>
     </section>
   )

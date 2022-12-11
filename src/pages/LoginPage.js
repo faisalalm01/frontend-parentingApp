@@ -26,7 +26,7 @@ function LoginPage({ loginSuccess }) {
       />
 
       <div className='login-page__intro text-center mt-4'>
-        <p className='text-sm'>Silahkan masukan email dan password untuk masuk</p>
+        <p className='text-sm text-slate-700'>Silahkan masukan email dan password untuk masuk</p>
       </div>
       
       <div className='flex'>
@@ -38,7 +38,7 @@ function LoginPage({ loginSuccess }) {
       </div>
 
       <div className='login-page__link-to-register'>
-        <p className='text-sm my-10'>Belum memiliki akun? Silahkan daftar <Link to="/register" className='text-blue-500 hover:text-blue-700'>disini</Link></p>
+        <p className='text-sm my-10 text-slate-800'>Belum memiliki akun? Silahkan daftar <Link to="/register" className='text-blue-500 hover:text-blue-700'>disini</Link></p>
       </div>
     </section>
   );

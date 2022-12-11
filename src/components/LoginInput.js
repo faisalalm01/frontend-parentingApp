@@ -44,12 +44,12 @@ class LoginInput extends React.Component {
     return (
       <form onSubmit={this.onSubmitHandler} className='login-input my-10'>
         <div className='mt-6'>
-        <label className='leading-7 text-sm text-custom-text-primary'>Email</label>
+        <label className='leading-7 text-sm text-custom-text-primary text-slate-800'>Email</label>
         <input type="email" placeholder='Masukan email anda' value={this.state.email} onChange={this.onEmailChangeHandler}  className="w-full bg-gray-200 rounded-lg border border-gray-400 outline-2 outline-form-secondry text-background-primary text-sm normal-case py-1 px-3 leading-8"/>
         </div>
 
         <div className='mt-4'>
-        <label className='leading-7 text-sm text-custom-text-primary'>Password</label>
+        <label className='leading-7 text-sm text-custom-text-primary text-slate-800'>Password</label>
         <input type="password" placeholder='Masukan password anda' value={this.state.password} onChange={this.onPasswordChangeHandler} className="w-full bg-gray-200 rounded-lg border border-gray-400 outline-2 outline-form-secondry text-background-primary text-sm normal-case py-1 px-3 leading-8"/>
         </div>
 
