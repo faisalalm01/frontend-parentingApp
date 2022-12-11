@@ -60,20 +60,20 @@ function LandingPage({ describe, title, image, id, onDetail }) {
         <section className="describe__landingPage">
           <div className="describe-one ">
             {/* image */}
-            <div class="container px-5 py-24 mx-auto">
-              <div class="lg:w-4/5 mx-auto flex flex-wrap justify-between">
-                <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
-                  <h1 class="text-blue-300 text-3xl title-font font-bold mb-4">
+            <div className="container px-5 py-24 mx-auto">
+              <div className="lg:w-4/5 mx-auto flex flex-wrap justify-between">
+                <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
+                  <h1 className="text-blue-300 text-3xl title-font font-bold mb-4">
                     Mengapa Memilih <br /> Smart Family?{" "}
                   </h1>
-                  <p class="leading-relaxed mb-4">
+                  <p className="leading-relaxed mb-4">
                     Merupakan website penyedia informasi untuk membantu anda
                     dalam mendidik anak dengan cara terbaik
                   </p>
                 </div>
                 <img
                   alt=""
-                  class="w-max h-64 object-cover object-center rounded"
+                  className="w-max h-64 object-cover object-center rounded"
                   src={Conten}
                 />
               </div>
@@ -81,18 +81,18 @@ function LandingPage({ describe, title, image, id, onDetail }) {
           </div>
 
           <div className="describe-two">
-            <div class="container px-5 py-24 mx-auto text-xl">
-              <div class="lg:w-4/5 mx-auto flex flex-wrap justify-between">
+            <div className="container px-5 py-24 mx-auto text-xl">
+              <div className="lg:w-4/5 mx-auto flex flex-wrap justify-between">
                 <img
                   alt="bocil"
-                  class="w-72 h-64 object-cover object-center rounded"
+                  className="w-72 h-64 object-cover object-center rounded"
                   src={Conten2}
                 />
-                <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 p-9 lg:mt-0 ">
-                  <h1 class="text-blue-300 text-3xl title-font font-bold mb-5">
+                <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 p-9 lg:mt-0 ">
+                  <h1 className="text-blue-300 text-3xl title-font font-bold mb-5">
                     Tersedia Forum Diskusi
                   </h1>
-                  <p class="leading-relaxed">
+                  <p className="leading-relaxed">
                     Smart Family memungkinkan para orang tua untuk saling
                     bertukar fikiran dengan kendala atau permasalahan yang
                     dihadapi dalam mendidik anaknya
@@ -104,13 +104,13 @@ function LandingPage({ describe, title, image, id, onDetail }) {
 
           <div className="describe-one ">
             {/* image */}
-            <div class="container px-5 py-24 mx-auto">
-              <div class="lg:w-4/5 mx-auto flex flex-wrap justify-between">
-                <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
-                  <h1 class="text-blue-300 text-3xl title-font font-bold mb-4">
+            <div className="container px-5 py-24 mx-auto">
+              <div className="lg:w-4/5 mx-auto flex flex-wrap justify-between">
+                <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
+                  <h1 className="text-blue-300 text-3xl title-font font-bold mb-4">
                     Konsultasi dengan <br /> Ahli
                   </h1>
-                  <p class="leading-relaxed mb-4">
+                  <p className="leading-relaxed mb-4">
                     Smart Family juga menyediakan sesi konsultasi dengan ahli
                     untuk membantu para orang tua menyelesaikan permasalahan
                     yang dihadapi dalam mendidik anaknya.
@@ -118,7 +118,7 @@ function LandingPage({ describe, title, image, id, onDetail }) {
                 </div>
                 <img
                   alt=""
-                  class="w-72 h-64 object-cover object-center rounded"
+                  className="w-72 h-64 object-cover object-center rounded"
                   src={Conten3}
                 />
               </div>
@@ -126,18 +126,18 @@ function LandingPage({ describe, title, image, id, onDetail }) {
           </div>
 
           <div className="describe-two">
-            <div class="container px-5 py-24 mx-auto text-xl">
-              <div class="lg:w-4/5 mx-auto flex flex-wrap justify-between">
+            <div className="container px-5 py-24 mx-auto text-xl">
+              <div className="lg:w-4/5 mx-auto flex flex-wrap justify-between">
                 <img
                   alt="bocil"
-                  class="w-72 h-64 object-cover object-center rounded"
+                  className="w-72 h-64 object-cover object-center rounded"
                   src={Conten4}
                 />
-                <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 p-9 lg:mt-0 ">
-                  <h1 class="text-blue-300 text-3xl title-font font-bold mb-5">
+                <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 p-9 lg:mt-0 ">
+                  <h1 className="text-blue-300 text-3xl title-font font-bold mb-5">
                     Tersedia Forum Diskusi
                   </h1>
-                  <p class="leading-relaxed">
+                  <p className="leading-relaxed">
                     Smart Family memungkinkan para orang tua untuk saling
                     bertukar pikiran dengan kendala atau permasalahan yang
                     dihadapai dalam mendidik anaknya.
@@ -158,18 +158,18 @@ function LandingPage({ describe, title, image, id, onDetail }) {
           {/* link menuju seluruh daftar artikel */}
           {/* TODO memunculkan data artikel dari API */}
           <div className="flex flex-wrap -m-4 px-16">
-            <div class="p-4 lg:w-1/4 md:w-1/2">
-              <div class="h-full flex flex-col items-center">
+            <div className="p-4 lg:w-1/4 md:w-1/2">
+              <div className="h-full flex flex-col items-center">
                 <img
                   src={Pict}
                   alt="team"
-                  class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                  className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
                 />
-                <div class="w-full mb-6">
-                  <h2 class="title-font font-medium text-lg text-gray-900">
+                <div className="w-full mb-6">
+                  <h2 className="title-font font-medium text-lg text-gray-900">
                     Melatih Kecerdasan Interpersonal pada Anak
                   </h2>
-                  <p class="mb-4 text-base font-semibold text-gray-500">
+                  <p className="mb-4 text-base font-semibold text-gray-500">
                     14 Oct 2022 <br /> Dhian Gowinda Luh Safitri
                   </p>
                   <span>
@@ -178,18 +178,18 @@ function LandingPage({ describe, title, image, id, onDetail }) {
                 </div>
               </div>
             </div>
-            <div class="p-4 lg:w-1/4 md:w-1/2">
-              <div class="h-full flex flex-col items-center">
+            <div className="p-4 lg:w-1/4 md:w-1/2">
+              <div className="h-full flex flex-col items-center">
                 <img
                   src={Pict}
                   alt="team"
-                  class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                  className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
                 />
-                <div class="w-full">
-                  <h2 class="title-font font-medium text-lg text-gray-900">
+                <div className="w-full">
+                  <h2 className="title-font font-medium text-lg text-gray-900">
                     Melatih Kecerdasan Interpersonal pada Anak
                   </h2>
-                  <p class="mb-4 text-base font-semibold text-gray-500">
+                  <p className="mb-4 text-base font-semibold text-gray-500">
                     14 Oct 2022 <br /> Dhian Gowinda Luh Safitri
                   </p>
                   <span>
@@ -198,18 +198,18 @@ function LandingPage({ describe, title, image, id, onDetail }) {
                 </div>
               </div>
             </div>
-            <div class="p-4 lg:w-1/4 md:w-1/2">
-              <div class="h-full flex flex-col items-center">
+            <div className="p-4 lg:w-1/4 md:w-1/2">
+              <div className="h-full flex flex-col items-center">
                 <img
                   src={Pict}
                   alt="team"
-                  class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                  className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
                 />
-                <div class="w-full">
-                  <h2 class="title-font font-medium text-lg text-gray-900">
+                <div className="w-full">
+                  <h2 className="title-font font-medium text-lg text-gray-900">
                     Melatih Kecerdasan Interpersonal pada Anak
                   </h2>
-                  <p class="mb-4 text-base font-semibold text-gray-500">
+                  <p className="mb-4 text-base font-semibold text-gray-500">
                     14 Oct 2022 <br /> Dhian Gowinda Luh Safitri
                   </p>
                   <span>
@@ -218,18 +218,18 @@ function LandingPage({ describe, title, image, id, onDetail }) {
                 </div>
               </div>
             </div>
-            <div class="p-4 lg:w-1/4 md:w-1/2">
-              <div class="h-full flex flex-col items-center">
+            <div className="p-4 lg:w-1/4 md:w-1/2">
+              <div className="h-full flex flex-col items-center">
                 <img
                   src={Pict}
                   alt="team"
-                  class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                  className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
                 />
-                <div class="w-full">
-                  <h2 class="title-font font-medium text-lg text-gray-900">
+                <div className="w-full">
+                  <h2 className="title-font font-medium text-lg text-gray-900">
                     Melatih Kecerdasan Interpersonal pada Anak
                   </h2>
-                  <p class="mb-4 text-base font-semibold text-gray-500">
+                  <p className="mb-4 text-base font-semibold text-gray-500">
                     14 Oct 2022 <br /> Dhian Gowinda Luh Safitri
                   </p>
                   <span>

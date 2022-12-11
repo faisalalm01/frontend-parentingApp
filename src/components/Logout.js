@@ -3,11 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { BiPowerOff } from "react-icons/bi";
 import styled from "styled-components";
 import axios from "axios";
-<<<<<<< HEAD
-import { logoutRoute } from "../utils/chat-api";
-=======
 import { logoutRoute } from "../utils/APIRoutes";
->>>>>>> 575773931b77957712bd8e700850e7dc958b4faa
 export default function Logout() {
   const navigate = useNavigate();
   const handleClick = async () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSearchParams } from 'react-router-dom';
 
-import ArticleList from '../components/article/';
+import ArticleList from '../components/article/ArticleList';
 import Search from '../components/Search';
 import ButtonArticle from '../components/ButtonArticle';
 

@@ -1,18 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import styled from "styled-components";
+import Logo from "../assets/logo.png";
 import { useNavigate, Link } from "react-router-dom";
-<<<<<<< HEAD
-import Logo from "../assets/logo.svg";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { registerRoute } from "../utils/chat-api";
-=======
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { registerRoute } from "../utils/APIRoutes";
->>>>>>> 575773931b77957712bd8e700850e7dc958b4faa
 
 export default function Register() {
   const navigate = useNavigate();
@@ -28,7 +21,7 @@ export default function Register() {
     email: "",
     password: "",
     confirmPassword: "",
-    nohp: ""
+    nohp: "",
   });
 
   useEffect(() => {
@@ -42,7 +35,7 @@ export default function Register() {
   };
 
   const handleValidation = () => {
-    const { password, confirmPassword, username, email, nohp } = values;
+    const { password, confirmPassword, username, email } = values;
     if (password !== confirmPassword) {
       toast.error(
         "Password and confirm password should be same.",
@@ -64,9 +57,10 @@ export default function Register() {
     } else if (email === "") {
       toast.error("Email is required.", toastOptions);
       return false;
-    } else if(nohp === ""){
-      toast.error("isi nohp", toastOptions);
-    }
+    } 
+    // else if (nohp === "") {
+    //   toast.error("isi nohp", toastOptions);
+    // }
 
     return true;
   };
@@ -79,7 +73,7 @@ export default function Register() {
         username,
         email,
         password,
-        nohp
+        nohp,
       });
 
       if (data.status === false) {
@@ -97,125 +91,97 @@ export default function Register() {
 
   return (
     <>
-      <FormContainer>
-        <form action="" onSubmit={(event) => handleSubmit(event)}>
-<<<<<<< HEAD
-          <div className="brand">
-            <img src={Logo} alt="logo" />
-            <h1>snappy</h1>
-          </div>
-=======
->>>>>>> 575773931b77957712bd8e700850e7dc958b4faa
-          <input
-            type="text"
-            placeholder="Username"
-            name="username"
-            onChange={(e) => handleChange(e)}
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            name="email"
-            onChange={(e) => handleChange(e)}
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            name="password"
-            onChange={(e) => handleChange(e)}
-          />
-          <input
-            type="password"
-            placeholder="Confirm Password"
-            name="confirmPassword"
-            onChange={(e) => handleChange(e)}
-          />
-            <input
-            type="number"
-            placeholder="nohp"
-            name="nohp"
-            onChange={(e) => handleChange(e)}
-          />
-          <button type="submit">Create User</button>
-          <span>
-            Already have an account ? <Link to="/login">Login.</Link>
-          </span>
-        </form>
-      </FormContainer>
+      <section className="register-page flex p-8 flex-col md:ml-auto w-full mt-10 md:mt-0 items-center">
+        <img
+          className="w-60 object-center rounded"
+          src={Logo}
+          alt="Smart Family"
+        />
+
+        <div className="register-page__intro text-center mt-4">
+          <p className="text-sm text-slate-700">
+            Silahkan masukan nama, email dan password untuk mendaftar
+          </p>
+        </div>
+
+        <div className="flex">
+          <form
+            action=""
+            onSubmit={(event) => handleSubmit(event)}
+            className="register-input my-10"
+          >
+            <div className="mt-2">
+              <label className="leading-7 text-sm text-custom-text-primary text-slate-800">
+                Nama
+              </label>
+              <input
+                type="text"
+                placeholder="masukkan username"
+                name="username"
+                onChange={(e) => handleChange(e)}
+                className="w-full bg-gray-200 rounded-lg border border-gray-400 outline-2 outline-form-secondry text-background-primary text-sm normal-case py-1 px-3 leading-8"
+              />
+            </div>
+
+            <div className="mt-4">
+              <label className="leading-7 text-sm text-custom-text-primary text-slate-800">
+                Email
+              </label>
+              <input
+                type="email"
+                placeholder="Masukkan Email"
+                name="email"
+                onChange={(e) => handleChange(e)}
+                className="w-full bg-gray-200 rounded-lg border border-gray-400 outline-2 outline-form-secondry text-background-primary text-sm normal-case py-1 px-3 leading-8"
+              />
+            </div>
+
+            <div className="mt-4">
+              <label className="leading-7 text-sm text-custom-text-primary text-slate-800">
+                Password
+              </label>
+              <input
+                type="password"
+                placeholder="masukkan Password"
+                name="password"
+                autoComplete="curentPassword"
+                onChange={(e) => handleChange(e)}
+                className="w-full bg-gray-200 rounded-lg border border-gray-400 outline-2 outline-form-secondry text-background-primary text-sm normal-case py-1 px-3 leading-8"
+              />
+            </div>
+
+            <div className="mt-4">
+              <label className="leading-7 text-sm text-custom-text-primary text-slate-800">
+                Password
+              </label>
+              <input
+                type="password"
+                placeholder="Konfirmasi Password"
+                name="confirmPassword"
+                autoComplete="curentPassword"
+                onChange={(e) => handleChange(e)}
+                className="w-full bg-gray-200 rounded-lg border border-gray-400 outline-2 outline-form-secondry text-background-primary text-sm normal-case py-1 px-3 leading-8"
+              />
+            </div>
+
+            <div className="my-6">
+              <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold text-md py-2 px-4 rounded">
+                Daftar
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div className="register-page__next-to-login">
+          <p className="text-sm mt-2 text-slate-800">
+            Sudah memiliki akun? Silahkan masuk{" "}
+            <Link to="/login" className="text-blue-500 hover:text-blue-700">
+              disini
+            </Link>
+          </p>
+        </div>
+      </section>
       <ToastContainer />
     </>
   );
 }
-
-const FormContainer = styled.div`
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-  align-items: center;
-  background-color: #131324;
-  .brand {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    justify-content: center;
-    img {
-      height: 5rem;
-    }
-    h1 {
-      color: white;
-      text-transform: uppercase;
-    }
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    background-color: #00000076;
-    border-radius: 2rem;
-    padding: 3rem 5rem;
-  }
-  input {
-    background-color: transparent;
-    padding: 1rem;
-    border: 0.1rem solid #4e0eff;
-    border-radius: 0.4rem;
-    color: white;
-    width: 100%;
-    font-size: 1rem;
-    &:focus {
-      border: 0.1rem solid #997af0;
-      outline: none;
-    }
-  }
-  button {
-    background-color: #4e0eff;
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 0.4rem;
-    font-size: 1rem;
-    text-transform: uppercase;
-    &:hover {
-      background-color: #4e0eff;
-    }
-  }
-  span {
-    color: white;
-    text-transform: uppercase;
-    a {
-      color: #4e0eff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  }
-`;
-<<<<<<< HEAD
-
-=======
->>>>>>> 575773931b77957712bd8e700850e7dc958b4faa

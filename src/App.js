@@ -8,8 +8,7 @@ import Footer from "./components/Footer";
 import LandingPage from "./pages/LandingPage";
 import ArticlePage from "./pages/ArticlePage";
 import AboutPage from "./pages/AboutPage";
-
-import DetailPage from './pages/DetailPage';
+import DetailPage from './pages/';
 import Profile from './pages/Profile'
 import ConsultationPage from "./pages/ConsultationPage";
 import Login from "./pages/LoginPage";
@@ -21,6 +20,7 @@ function App() {
             <header>
                 <Navigation />
             </header>
+
             <main>
                 <Routes>
                     <Route path="/login" element={<Login/>}/>

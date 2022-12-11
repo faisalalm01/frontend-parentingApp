@@ -1,21 +1,12 @@
-<<<<<<< HEAD
-=======
 /* eslint-disable react-hooks/exhaustive-deps */
->>>>>>> 575773931b77957712bd8e700850e7dc958b4faa
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import styled from "styled-components";
 import { useNavigate, Link } from "react-router-dom";
-<<<<<<< HEAD
-import Logo from "../assets/logo.svg";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { loginRoute } from "../utils/chat-api";
-=======
+import Logo from "../assets/logo.png";
+import HeroLogin from '../assets/hero-login.png'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { loginRoute } from "../utils/APIRoutes";
->>>>>>> 575773931b77957712bd8e700850e7dc958b4faa
 
 export default function Login() {
   const navigate = useNavigate();
@@ -73,104 +64,54 @@ export default function Login() {
 
   return (
     <>
-      <FormContainer>
-        <form action="" onSubmit={(event) => handleSubmit(event)}>
-<<<<<<< HEAD
-          <div className="brand">
-            <img src={Logo} alt="logo" />
-            <h1>snappy</h1>
-          </div>
-=======
->>>>>>> 575773931b77957712bd8e700850e7dc958b4faa
-          <input
-            type="text"
+      <section className='login-page flex p-8 flex-col md:ml-auto w-full mt-10 md:mt-0 items-center'>
+      <img
+        className="w-60 object-center rounded"
+          src={Logo} alt="Smart Family"
+      />
+
+      <div className='login-page__intro text-center mt-4'>
+        <p className='text-sm text-slate-700'>Silahkan masukan email dan password untuk masuk</p>
+      </div>
+      
+      <div className='flex'>
+      <form onSubmit={(event) => handleSubmit(event)} action="" className='login-input my-10'>
+        <div className='mt-6'>
+        <label className='leading-7 text-sm text-custom-text-primary text-slate-800'>Email</label>
+        <input  type="text"
             placeholder="Username"
             name="username"
             onChange={(e) => handleChange(e)}
             min="3"
-          />
-          <input
-            type="password"
+            className="w-full bg-gray-200 rounded-lg border border-gray-400 outline-2 outline-form-secondry text-background-primary text-sm normal-case py-1 px-3 leading-8"/>
+        </div>
+
+        <div className='mt-4'>
+        <label className='leading-7 text-sm text-custom-text-primary text-slate-800'>Password</label>
+        <input  type="password"
             placeholder="Password"
             name="password"
             onChange={(e) => handleChange(e)}
-          />
-          <button type="submit">Log In</button>
-          <span>
-            Don't have an account ? <Link to="/register">Create One.</Link>
-          </span>
-        </form>
-      </FormContainer>
+            className="w-full bg-gray-200 rounded-lg border border-gray-400 outline-2 outline-form-secondry text-background-primary text-sm normal-case py-1 px-3 leading-8"/>
+        </div>
+
+        <div className='my-6'>
+          <button type="submit" className='bg-blue-500 hover:bg-blue-700 text-white font-bold text-md py-2 px-4 rounded'>
+            Masuk
+          </button>
+        </div>
+      </form>
+      <img
+        className="w-26 object-center rounded mx-10 mt-10"
+          src={HeroLogin} alt="Smart Family"
+      />
+      </div>
+
+      <div className='login-page__link-to-register'>
+        <p className='text-sm my-10 text-slate-800'>Belum memiliki akun? Silahkan daftar <Link to="/register" className='text-blue-500 hover:text-blue-700'>disini</Link></p>
+      </div>
+    </section>
       <ToastContainer />
     </>
   );
 }
-
-const FormContainer = styled.div`
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-  align-items: center;
-  background-color: #131324;
-  .brand {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    justify-content: center;
-    img {
-      height: 5rem;
-    }
-    h1 {
-      color: white;
-      text-transform: uppercase;
-    }
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    background-color: #00000076;
-    border-radius: 2rem;
-    padding: 5rem;
-  }
-  input {
-    background-color: transparent;
-    padding: 1rem;
-    border: 0.1rem solid #4e0eff;
-    border-radius: 0.4rem;
-    color: white;
-    width: 100%;
-    font-size: 1rem;
-    &:focus {
-      border: 0.1rem solid #997af0;
-      outline: none;
-    }
-  }
-  button {
-    background-color: #4e0eff;
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 0.4rem;
-    font-size: 1rem;
-    text-transform: uppercase;
-    &:hover {
-      background-color: #4e0eff;
-    }
-  }
-  span {
-    color: white;
-    text-transform: uppercase;
-    a {
-      color: #4e0eff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  }
-`;
