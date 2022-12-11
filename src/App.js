@@ -7,7 +7,6 @@ import Footer from './components/Footer';
 import LandingPage from "./pages/LandingPage";
 import ArticlePage from './pages/ArticlePage';
 import ForumPage from './pages/ForumPage';
-import ConsultationPage from './pages/ConsultationPage';
 import AboutPage from "./pages/AboutPage";
 import DetailPage from './pages/DetailPage';
 import LoginPage from "./pages/LoginPage";
@@ -27,7 +26,6 @@ function App() {
                     <Route path='/' element={<LandingPage />} />
                     <Route path='/article' element={<ArticlePage />} />
                     <Route path='/forum' element={<ForumPage />} />
-                    <Route path='/consultation' element={<ConsultationPage />} />
                     <Route path='/about' element={<AboutPage />} />
                     <Route path='/articles/:id' element={<DetailPage />} />
                 </Routes>
