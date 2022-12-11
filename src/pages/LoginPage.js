@@ -7,6 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { loginRoute } from "../utils/chat-api";
 
+
 export default function Login() {
 
   const navigate = useNavigate();
@@ -66,8 +67,8 @@ export default function Login() {
     <>
       <FormContainer>
         <form action="" onSubmit={(event) => handleSubmit(event)}>
-
               <input
+
             type="text"
             placeholder="Username"
             name="username"
