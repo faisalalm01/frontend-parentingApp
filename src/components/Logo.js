@@ -2,7 +2,8 @@ import React from "react";
 
 function Logo() {
     return (
-        <h1 className='logo'>Smart <span>Family</span></h1>
+        <h1 className='logo flex text-center justify-around'>Smart Family</h1>
+        // <img src=""></img>
     )
 }
 
