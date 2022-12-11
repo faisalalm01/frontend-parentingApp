@@ -8,6 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { loginRoute } from "../utils/chat-api";
 
 export default function Login() {
+
   const navigate = useNavigate();
   const [values, setValues] = useState({ username: "", password: "" });
   const toastOptions = {
@@ -65,11 +66,8 @@ export default function Login() {
     <>
       <FormContainer>
         <form action="" onSubmit={(event) => handleSubmit(event)}>
-          <div className="brand">
-            <img src={Logo} alt="logo" />
-            <h1>snappy</h1>
-          </div>
-          <input
+
+              <input
             type="text"
             placeholder="Username"
             name="username"
