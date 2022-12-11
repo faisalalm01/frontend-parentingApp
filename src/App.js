@@ -10,6 +10,7 @@ import ForumPage from './pages/ForumPage';
 import ConsultationPage from './pages/ConsultationPage';
 import AboutPage from "./pages/AboutPage";
 import DetailPage from './pages/DetailPage';
+import Profile from './pages/Profile'
 
 function App() {
     return (
@@ -26,6 +27,8 @@ function App() {
                     <Route path='/consultation' element={<ConsultationPage />} />
                     <Route path='/about' element={<AboutPage />} />
                     <Route path='/articles/:id' element={<DetailPage />} />
+                    <Route path= 'profile' element ={<Profile/>}/>
+
                 </Routes>
             </main>
 
