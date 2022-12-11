@@ -7,42 +7,40 @@ import Footer from "./components/Footer";
 
 import LandingPage from "./pages/LandingPage";
 import ArticlePage from "./pages/ArticlePage";
-import ForumPage from "./pages/ForumPage";
 import AboutPage from "./pages/AboutPage";
-import DetailPage from "./pages/DetailPage";
-import LoginPage from "./pages/LoginPage";
-import RegisterPage from "./pages/RegisterPage";
+import DetailPage from './pages/DetailPage';
+import Profile from './pages/Profile'
+import ConsultationPage from "./pages/ConsultationPage";
+import Login from "./pages/LoginPage";
+import Register from "./pages/RegisterPage";
 
 function App() {
-    // const navigate = useNavigate();
+    return (
+        <section>
+            <header>
+                <Navigation />
+            </header>
 
-    // useEffect(async() =>{
-    //     if(!localStorage.getItem(pot))
-    // })
+            <main>
+                <Routes>
+                    <Route path="/login" element={<Login/>}/>
+                    <Route path="/register" element={<Register/>}/>
+                    <Route path='/' element={<LandingPage />} />
+                    <Route path='/article' element={<ArticlePage />} />
+                    <Route path='/chat' element={<ConsultationPage />} />
+                    <Route path='/about' element={<AboutPage />} />
+                    <Route path='/articles/:id' element={<DetailPage />} />
+                    <Route path= '/profile' element ={<Profile/>}/>
 
-      return (
-          <section>
-      <header>
-        <Navigation />
-      </header>
+                </Routes>
+            </main>
 
-      <main>
-        <Routes>
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/register" element={<RegisterPage />} />
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/article" element={<ArticlePage />} />
-          <Route path="/forum" element={<ForumPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/articles/:id" element={<DetailPage />} />
-        </Routes>
-      </main>
+            <div>
+                <Footer />
+            </div>
+        </section>
+    )
 
-      <div>
-        <Footer />
-      </div>
-    </section>
-  );
 }
 
 export default App;
