@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 
 import ArticleItem from "./ArticleItem";
 
@@ -12,6 +13,20 @@ function ArticleList({ articles }) {
       </div>
     </div>
   );
+=======
+import ArticleItem from "./ArticleItem";
+
+function ArticleList({ articles }) {
+    return (
+        <div>
+            {
+              articles.map((article) => (
+                <ArticleItem key={article.id} {...article} />
+                ))
+            }
+        </div>
+    );
+>>>>>>> 8452ae2647f2d4df7fdf5b2d2a360a78742897a4
 }
 
 export default ArticleList;

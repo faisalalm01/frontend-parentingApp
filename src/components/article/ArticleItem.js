@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 
 import ArticleItemBody from "../article/ArticleItemBody";
 import ArticleItemImage from "../article/ArticleItemImage";
@@ -20,6 +21,18 @@ function ArticleItem({ describe, title, image, id, onDetail }) {
       
     </section>
   );
+=======
+import ArticleItemBody from '../article/ArticleItemBody';
+import ArticleItemImage from "../article/ArticleItemImage";
+
+function ArticleItem({ publishedAt, title, description, content, urlToImage }) {
+    return (
+        <div className="article-item">
+            <ArticleItemImage urlToImage={urlToImage} />
+            <ArticleItemBody title={title} publishedAt={publishedAt} description={description} content={content} />
+        </div>
+    );
+>>>>>>> 8452ae2647f2d4df7fdf5b2d2a360a78742897a4
 }
 
 export default ArticleItem;
