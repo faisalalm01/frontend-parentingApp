@@ -7,9 +7,9 @@ import Footer from "./components/Footer";
 import LandingPage from "./pages/LandingPage";
 import ArticlePage from "./pages/ArticlePage";
 import AboutPage from "./pages/AboutPage";
-import DetailPage from "./pages/DetailPage";
-import Login from "./pages/LoginPage";
-import Register from "./pages/RegisterPage";
+
+import DetailPage from './pages/DetailPage';
+import Profile from './pages/Profile'
 
 function App() {
     return (
@@ -25,6 +25,8 @@ function App() {
                     <Route path='/consultation' element={<ConsultationPage />} />
                     <Route path='/about' element={<AboutPage />} />
                     <Route path='/articles/:id' element={<DetailPage />} />
+                    <Route path= 'profile' element ={<Profile/>}/>
+
                 </Routes>
             </main>
 
