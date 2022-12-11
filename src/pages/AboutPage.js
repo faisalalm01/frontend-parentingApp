@@ -16,7 +16,7 @@ function AboutPage() {
               BRAND NAME
             </h2>
             <h1 class="text-gray-900 text-3xl title-font font-medium mb-4">
-              Animated Night Hill Illustrations
+              Selamat Datang
             </h1>
             <p class="leading-relaxed mb-4">
               Petualangan Smart Family dimulai sejak tahun 2022 sebagai website
