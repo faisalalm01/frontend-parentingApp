@@ -33,6 +33,6 @@ function App() {
       </div>
     </section>
   );
-}
+  }
 
-export default App;
+  export default App;
