@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Hero from "../assets/hero.jpg";
 import Conten from "../assets/Sc1.jpg";
 
@@ -27,26 +27,26 @@ function LandingPage() {
           </div>
         </div>
 
-        <section class="text-gray-600 body-font bg-blue-400">
-          <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-wrap -m-4 text-center">
-              <div class="p-4 sm:w-1/4 w-1/2">
-                <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">
+        <section className="text-gray-600 body-font bg-blue-400">
+          <div className="container px-5 py-24 mx-auto">
+            <div className="flex flex-wrap -m-4 text-center">
+              <div className="p-4 sm:w-1/4 w-1/2">
+                <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">
                   2.7K
                 </h2>
-                <p class="leading-relaxed">Users</p>
+                <p className="leading-relaxed">Users</p>
               </div>
-              <div class="p-4 sm:w-1/4 w-1/2">
-                <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">
+              <div className="p-4 sm:w-1/4 w-1/2">
+                <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">
                   35
                 </h2>
-                <p class="leading-relaxed">Downloads</p>
+                <p className="leading-relaxed">Downloads</p>
               </div>
-              <div class="p-4 sm:w-1/4 w-1/2">
-                <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">
+              <div className="p-4 sm:w-1/4 w-1/2">
+                <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">
                   4
                 </h2>
-                <p class="leading-relaxed">Products</p>
+                <p className="leading-relaxed">Products</p>
               </div>
             </div>
           </div>

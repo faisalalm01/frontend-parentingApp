@@ -28,7 +28,7 @@ export default function Chat() {
         )
       );
     }
-  }, []);
+  }, [currentUser]);
   useEffect(() => {
     if (currentUser) {
       socket.current = io(host);

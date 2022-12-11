@@ -9,6 +9,7 @@ import ArticlePage from './pages/ArticlePage';
 import AboutPage from "./pages/AboutPage";
 import DetailPage from './pages/DetailPage';
 import Login from "./pages/LoginPage";
+import Register from "./pages/RegisterPage";
 
 function App() {
     return (
@@ -24,6 +25,7 @@ z
                     <Route path='/article' element={<ArticlePage />} />
                     <Route path='/about' element={<AboutPage />} />
                     <Route path='/articles/:id' element={<DetailPage />} />
+                    <Route path="/register" element={<Register/>}/>
                 </Routes>
             </main>
 
