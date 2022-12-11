@@ -4,7 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { io } from "socket.io-client";
 import styled from "styled-components";
-import { allUsersRoute, host } from "../utils/APIRoutes";
+import { allUsersRoute, host } from "../utils/chat-api";
 import ChatContainer from "../components/chat/ChatContainer";
 import Contacts from "../components/chat/Contact";
 import Welcome from "../components/chat/Welcome";

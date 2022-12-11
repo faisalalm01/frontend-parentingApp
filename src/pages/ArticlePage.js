@@ -1,5 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
 import { useSearchParams } from 'react-router-dom';
 
 import ArticleList from '../components/article/ArticleList';
@@ -51,29 +50,3 @@ function ArticlePage() {
 }
 
 export default ArticlePage;
-=======
-
-import ArticleList from '../components/article/ArticleList';
-
-import { getAllData } from '../utils/api';
-
-function ArticlePage() {
-  const articles = getAllData();
-
-  return (
-    <section className='article-page'>
-      <div>
-        <h2 className='artcile-page__current-artcle'>Artikel Terkini</h2>
-        <p>Temukan Informasi dan tips terbaik seputar pendidikan anak, kegiatan kreatif, dan konten menarik lainnya untuk mendukung tumbuh kembang si Kecil.</p>
-      </div>
-        
-
-      <div>
-        <ArticleList articles={articles} />
-      </div>
-    </section>
-  );
-}
-
-export default ArticlePage;
->>>>>>> 8452ae2647f2d4df7fdf5b2d2a360a78742897a4
