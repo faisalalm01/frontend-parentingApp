@@ -73,7 +73,7 @@ function LandingPage({ describe, title, image, id, onDetail }) {
                 </div>
                 <img
                   alt=""
-                  class="w-72 h-64 object-cover object-center rounded"
+                  class="w-max h-64 object-cover object-center rounded"
                   src={Conten}
                 />
               </div>

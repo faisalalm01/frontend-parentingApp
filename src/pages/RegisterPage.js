@@ -3,10 +3,16 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import styled from "styled-components";
 import { useNavigate, Link } from "react-router-dom";
+<<<<<<< HEAD
 import Logo from "../assets/logo.svg";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { registerRoute } from "../utils/chat-api";
+=======
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { registerRoute } from "../utils/APIRoutes";
+>>>>>>> 575773931b77957712bd8e700850e7dc958b4faa
 
 export default function Register() {
   const navigate = useNavigate();
@@ -93,10 +99,13 @@ export default function Register() {
     <>
       <FormContainer>
         <form action="" onSubmit={(event) => handleSubmit(event)}>
+<<<<<<< HEAD
           <div className="brand">
             <img src={Logo} alt="logo" />
             <h1>snappy</h1>
           </div>
+=======
+>>>>>>> 575773931b77957712bd8e700850e7dc958b4faa
           <input
             type="text"
             placeholder="Username"
@@ -206,4 +215,7 @@ const FormContainer = styled.div`
     }
   }
 `;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 575773931b77957712bd8e700850e7dc958b4faa

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
@@ -10,6 +11,9 @@ import AboutPage from "./pages/AboutPage";
 
 import DetailPage from './pages/DetailPage';
 import Profile from './pages/Profile'
+import ConsultationPage from "./pages/ConsultationPage";
+import Login from "./pages/LoginPage";
+import Register from "./pages/RegisterPage";
 
 function App() {
     return (
@@ -19,13 +23,14 @@ function App() {
             </header>
             <main>
                 <Routes>
+                    <Route path="/login" element={<Login/>}/>
+                    <Route path="/register" element={<Register/>}/>
                     <Route path='/' element={<LandingPage />} />
                     <Route path='/article' element={<ArticlePage />} />
-                    <Route path='/forum' element={<ForumPage />} />
-                    <Route path='/consultation' element={<ConsultationPage />} />
+                    <Route path='/chat' element={<ConsultationPage />} />
                     <Route path='/about' element={<AboutPage />} />
                     <Route path='/articles/:id' element={<DetailPage />} />
-                    <Route path= 'profile' element ={<Profile/>}/>
+                    <Route path= '/profile' element ={<Profile/>}/>
 
                 </Routes>
             </main>
@@ -35,6 +40,7 @@ function App() {
             </div>
         </section>
     )
+
 }
 
 export default App;
