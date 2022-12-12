@@ -19,7 +19,7 @@ const articles = [
     },
     {
         id: 276204,
-        image: 'https://1.bp.blogspot.com/-oF1aji0vAxE/WhOjIE06HhI/AAAAAAAAD1c/Qo-4VS1-xpU4xu8bNhdFNpItw5iUxW5SQCEwYBhgL/s1600/MEREKA.jpg',
+        image: 'https://tentanganak.id/_next/image/?url=https%3A%2F%2Fd37exbes84clb2.cloudfront.net%2Fimages%2Farticle%2F1669800390.png&w=1920&q=75',
         title: 'Dukungan pada anak',
         describe: 'Anak terlahir dengan bakat masing-masing. Bisa jadi bakat tersebut sama dengan orang tua atau bisa juga sangat berbeda. Apapun itu, orang tua perlu mendukung mereka untuk menggeluti bidang yang mereka sukai. Cara ini adalah langkah paling efektif untuk membantu kesuksesan anak. Selama hobi anak positif, tidak ada alasan orang tua tidak memberikan dukungan. Hindari mendikte anak karena tindakan tersebut hanya akan membuat anak tertekan dan tidak bertumbuh dengan maksimal.',
     },
@@ -27,6 +27,12 @@ const articles = [
         id: 285674,
         image: 'https://1.bp.blogspot.com/-oF1aji0vAxE/WhOjIE06HhI/AAAAAAAAD1c/Qo-4VS1-xpU4xu8bNhdFNpItw5iUxW5SQCEwYBhgL/s1600/MEREKA.jpg',
         title: 'Mengenalkan pentingnya berbagi',
+        describe: 'Sebagai anak kecil, mereka belum memahami makna berbagai dan memberi, peran orang tua sangat penting untuk mencontohkan tindakan tersebut. Contohkan dengan hal kecil yaitu, memberikan sisa tulang ikan kepada kucing, memberikan contoh dan penjelasan manfaat dari berbagi makanan kepada orang lain/teman.',
+    },
+    {
+        id: 285634,
+        image: 'https://tentanganak.id/_next/image/?url=https%3A%2F%2Fd37exbes84clb2.cloudfront.net%2Fimages%2Farticle%2F1669792942.png&w=1920&q=75',
+        title: 'Cara Atasi Batuk Pilek pada Bayi dan Anak',
         describe: 'Sebagai anak kecil, mereka belum memahami makna berbagai dan memberi, peran orang tua sangat penting untuk mencontohkan tindakan tersebut. Contohkan dengan hal kecil yaitu, memberikan sisa tulang ikan kepada kucing, memberikan contoh dan penjelasan manfaat dari berbagi makanan kepada orang lain/teman.',
     }
 ];

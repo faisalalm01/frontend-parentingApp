@@ -1,13 +1,16 @@
-import React from 'react';
+import React from "react";
 
 function CaptainItemBody({ name, title, describe }) {
-    return (
-        <div className='captain-item__body'>
-            <h4 className='captain-item__name'> {name} </h4>
-            <p className='captain-item__title'> {title} </p>
-            <p className='captain-item__describe'> {describe} </p>
-        </div>
-    );
+  return (
+    <div className="h-full text-center">
+      <h2 className="text-gray-900 font-medium title-font tracking-wider text-lg">
+        {" "}
+        {name}{" "}
+      </h2>
+      <p className="text-gray-500"> {title} </p>
+      <p className="leading-relaxed text-base"> {describe} </p>
+    </div>
+  );
 }
 
 export default CaptainItemBody;
