@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { BiPowerOff } from "react-icons/bi";
-import styled from "styled-components";
+import { FiLogOut } from "react-icons/fi";
 import axios from "axios";
 import { logoutRoute } from "../utils/APIRoutes";
 export default function Logout() {
@@ -17,23 +16,11 @@ export default function Logout() {
     }
   };
   return (
-    <Button onClick={handleClick}>
-      <BiPowerOff />
-    </Button>
+    <button
+      onClick={handleClick}
+      className="font-bold hover:bg-red-400 inline-flex items-center bg-blue-400 border-0 py-3 px-4 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
+    >
+      <FiLogOut />
+    </button>
   );
 }
-
-const Button = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  background-color: #9a86f3;
-  border: none;
-  cursor: pointer;
-  svg {
-    font-size: 1.3rem;
-    color: #ebe7ff;
-  }
-`;
