@@ -12,12 +12,6 @@ const articles = [
         describe: 'Anak-anak belum mengenal konsep ibu atau ayah. Yang mereka ketahui adalah sosok yang mengajak mereka bermain dan melindungi mereka. Oleh karena itu, sebagai orang tua harus menjadi teman yang memahami keinginan anak. Misalnya, anak yang ada di usia bermain, ajak lah mereka bermain, jangan dipaksa terlalu lama untuk belajar.',
     },
     {
-        id: 265743,
-        image: 'https://1.bp.blogspot.com/-oF1aji0vAxE/WhOjIE06HhI/AAAAAAAAD1c/Qo-4VS1-xpU4xu8bNhdFNpItw5iUxW5SQCEwYBhgL/s1600/MEREKA.jpg',
-        title: 'Kalimat anjuran bukan kalimat perintah',
-        describe: 'Kalimat perintah yang sering digunakan oleh orang tua yaitu "jangan a/b", akan menimbulkan konotasi negatif dan tidak berdampak optimal bagi anak. Ubahlah kalimat larangan menjadi kalimat anjuran seperti, "jalan palan-pelan, dll" usahakan lah menghindari kata "jangan". Usahakan juga selalu berbicara menggunakan nada rendah, bukan teriakan. Hal ini sangat mempengaruhi mental anak. ',
-    },
-    {
         id: 276204,
         image: 'https://tentanganak.id/_next/image/?url=https%3A%2F%2Fd37exbes84clb2.cloudfront.net%2Fimages%2Farticle%2F1669800390.png&w=1920&q=75',
         title: 'Dukungan pada anak',
