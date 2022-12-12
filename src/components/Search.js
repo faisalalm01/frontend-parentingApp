@@ -1,51 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
 
-class Search extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      keyword: props.defaultKeyword || ''
-    };
-
-    this.onSubmitHandler = this.onSubmitHandler.bind(this);
-    this.onKeywordChangeHandler = this.onKeywordChangeHandler.bind(this);
-  }
-
-  onSubmitHandler(event) {
-    event.preventDefault();
-    this.props.search(this.state.keyword);
-  }
-
-  onKeywordChangeHandler(event) {
-    const { value } = event.target;
-
-    this.setState(() => {
-      return {
-        keyword: value
-      };
-    });
-  }
-
-  render() {
+function SearchBar({ keyword, keywordChange }) {
     return (
-      <form onSubmit={this.onSubmitHandler}>
-        <input
-          type="text"
-          placeholder="search"
-          value={this.state.keyword}
-          onChange={this.onKeywordChangeHandler}
-        />
-        <button type="submit">Search</button>
-      </form>
-    );
-  }
-}
+            <input
+              className="search"
+              type="text"
+              placeholder="search"
+              value={keyword}
+              onChange={(event) => keywordChange(event.target.value)}        
+            />
+          )
+        }
 
-Search.propTypes = {
-  search: PropTypes.func.isRequired,
-  defaultKeyword: PropTypes.string
-};
-
-export default Search;
+export default SearchBar;

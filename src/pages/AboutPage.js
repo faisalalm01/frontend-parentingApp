@@ -9,18 +9,18 @@ function AboutPage() {
 
   return (
     <>
-      <div class="container px-5 py-24 mx-auto">
-        <div class="lg:w-4/5 mx-auto flex flex-wrap">
-          <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
-            <h1 class="text-gray-900 text-3xl title-font font-medium mb-4">
+      <div className="container px-5 py-24 mx-auto">
+        <div className="lg:w-4/5 mx-auto flex flex-wrap">
+          <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
+            <h1 className="text-gray-900 text-3xl title-font font-medium mb-4">
               Selamat Datang
             </h1>
-            <p class="leading-relaxed mb-4">
+            <p className="leading-relaxed mb-4">
               Petualangan Smart Family dimulai sejak tahun 2022 sebagai website
               penyedia informasi untuk membantu para orang tua dalam mendidik
               anaknya mulai dari usia dini dengan cara yang terbaik.
             </p>
-            <div class="flex mt-6 items-center pb-5 mb-5">
+            <div className="flex mt-6 items-center pb-5 mb-5">
               <p>
                 Smart Family terdiri dari tim beranggotakan frontend web
                 developer yang berkolaborasi untuk menghasilkan website penyedia
@@ -30,31 +30,31 @@ function AboutPage() {
           </div>
           <img
             alt="ecommerce"
-            class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+            className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
             src="./images/cuate.png"
           />
         </div>
       </div>
 
       <section className="about-page">
-        <div class="container px-5 py-24 mx-auto text-xl">
-          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+        <div className="container px-5 py-24 mx-auto text-xl">
+          <div className="lg:w-4/5 mx-auto flex flex-wrap">
             <img
               alt="bocil"
-              class="lg:w-1/2 w-full lg:h-auto h-20 object-cover object-center p-7 rounded"
+              className="lg:w-1/2 w-full lg:h-auto h-20 object-cover object-center p-7 rounded"
               src="./images/hero-about.png"
             />
-            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 p-9 lg:mt-0 ">
-              <h1 class="text-gray-900 text-3xl title-font font-bold mb-5">
+            <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 p-9 lg:mt-0 ">
+              <h1 className="text-gray-900 text-3xl title-font font-bold mb-5">
                 Latar Belakang
               </h1>
-              <p class="leading-relaxed">
+              <p className="leading-relaxed">
                 Usia 0-6 tahun merupakan periode emas dalam pertumbuhan setiap
                 anak. Tahun-tahun awal kehidupan inilah yang menentukan
                 bagaimana karakter dan kecerdasannya terbentuk. Dengan stimulasi
                 yang tepat, anak akan bertumbuh dan berkembang secara maksimal.
               </p>
-              <div class="flex mt-6 items-center pb-5 mb-5">
+              <div className="flex mt-6 items-center pb-5 mb-5">
                 <p>
                   Melihat betapa krusial optimalisasi perkembangan pada usia
                   dini, pendidikan yang diberikan tentu juga harus memadai.
