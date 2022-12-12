@@ -69,17 +69,19 @@ function AboutPage() {
           </div>
         </div>
 
-        <section className="captain">
-          <div className="captain-head">
+        <section className="">
+        <div className="container px-5 py-24 mx-auto text-xl">
+          <div className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
             <h1>Para Kapten</h1>
-            <p>
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base px-60">
               Sama seperti kapal yang akan terombang-ambing tanpa kapten, Smart
               Family juga tak akan bisa berjalan tanpa para pemimpin petualangan
               ini.{" "}
             </p>
           </div>
+          </div>
 
-          <div className="captains-list">
+          <div className="container px-5 py-24 mx-auto">
             <CaptainList captains={captains} />
           </div>
         </section>
